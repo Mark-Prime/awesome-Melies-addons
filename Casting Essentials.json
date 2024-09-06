@@ -185,7 +185,7 @@
         "command": "ce_localplayer_enabled",
         "tooltip": "Enables the system.",
         "type": "bool",
-        "value": true
+        "value": false
       },
       "Player": {
         "command": "ce_localplayer_player",
@@ -198,7 +198,7 @@
         "command": "ce_localplayer_track_spec_target",
         "tooltip": "automatically updates to the current player being spectated.",
         "type": "bool",
-        "value": true
+        "value": false
       }
     },
     "type": "group"
