@@ -12,3 +12,7 @@ Installing an addon is very easy and is only a few steps.
 4. Done!
 
 You don't even need to restart Méliès for it to take effect, just close and re-open the settings menu.
+
+## How to contribute
+
+If you have an addon you'd like to contribute, feel free to submit a pull request or just message me in the Méliès discord. If I like it and feel that it fits the list, I'll add it.
