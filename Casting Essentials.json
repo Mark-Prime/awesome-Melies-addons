@@ -1,0 +1,225 @@
+{
+  "Antifreeze": {
+    "command": "ce_antifreeze_enabled",
+    "tooltip": "Prevents the spectator GUI from becoming stuck after pauses.",
+    "type": "bool",
+    "value": false
+  },
+  "Camera Autoswitch": {
+    "description": "Automatically switches spectator targets when an specific event occurs.",
+    "settings": {
+      "Enabled": {
+        "command": "ce_antifreeze_enabled",
+        "tooltip": "Enables the autoswitching system.",
+        "type": "bool",
+        "value": false
+      },
+      "Killer": {
+        "command": "ce_cameraautoswitch_killer",
+        "tooltip": "Enables automatically switching to the killer when your\ncurrent spectator target is killed.",
+        "type": "bool",
+        "value": false
+      },
+      "Killer Delay": {
+        "command": "ce_cameraautoswitch_killer_delay",
+        "tooltip": "Delay before switching to the killer after your current spectator target is killed.",
+        "type": "int",
+        "value": 0
+      }
+    },
+    "type": "group"
+  },
+  "Camera Tools": {
+    "settings": {
+      "Autodirector": {
+        "command": "ce_cameratools_autodirector_mode",
+        "tooltip": "Lets the autodirector control the camera.",
+        "type": "bool",
+        "value": false
+      },
+      "Fix View Heights": {
+        "command": "ce_cameratools_fix_view_heights",
+        "tooltip": "Fixes player view height inconsistency between POV & STV\n(lines up sniper scope)",
+        "type": "bool",
+        "value": false
+      },
+      "Force Alive Targets": {
+        "command": "ce_cameratools_spec_player_alive",
+        "tooltip": "Prevents the camera from being able to switch to dead players.",
+        "type": "bool",
+        "value": false
+      },
+      "Force Valid Targets": {
+        "command": "ce_cameratools_force_valid_target",
+        "tooltip": "Prevents the camera from spectating invalid targets.",
+        "type": "bool",
+        "value": false
+      },
+      "Thirdperson Lock": {
+        "settings": {
+          "Bone": {
+            "command": "ce_tplock_bone",
+            "tooltip": "Bone to attach camera position to.",
+            "type": "string",
+            "value": "bip_spine_2"
+          },
+          "Default Angle": {
+            "command": "ce_tplock_default_angle",
+            "tooltip": "Camera angle offset (pitch/yaw/roll) from ce_tplock_bone.",
+            "type": "string",
+            "value": "*0.5 ? =0"
+          },
+          "Default Position": {
+            "command": "ce_tplock_default_pos",
+            "tooltip": "Camera x/y/z offset from ce_tplock_bone.",
+            "type": "string",
+            "value": "18 -80 20"
+          },
+          "Degrees per Second limit": {
+            "command": "ce_tplock_default_dps",
+            "tooltip": "Max degrees per second for angle (pitch/yaw/roll).\nSet to < 0 to uncap.",
+            "type": "int",
+            "value": 0
+          },
+          "Enable tplock": {
+            "command": "ce_tplock_enable",
+            "type": "bool",
+            "value": false
+          },
+          "Taunt Lock": {
+            "settings": {
+              "Degrees per Second limit": {
+                "command": "ce_tplock_taunt_dps",
+                "tooltip": "Max degrees per second for angle (pitch/yaw/roll) when taunting.\nSet to < 0 to uncap.",
+                "type": "int",
+                "value": 0
+              },
+              "Enable Taunt Lock": {
+                "command": "ce_tplock_taunt_enable",
+                "tooltip": "Forces the camera into thirdperson lock when taunting.\nDoes not require tplock to be enabled.",
+                "type": "bool",
+                "value": false
+              },
+              "Taunt Angle": {
+                "command": "ce_tplock_taunt_angle",
+                "tooltip": "Camera angle offset (pitch/yaw/roll) from ce_tplock_bone when taunting.",
+                "type": "string",
+                "value": "*0.5 ? =0"
+              },
+              "Taunt Position": {
+                "command": "ce_tplock_taunt_pos",
+                "tooltip": "Camera x/y/z offset from ce_tplock_bone when taunting.",
+                "type": "string",
+                "value": "18 -80 20"
+              }
+            },
+            "type": "group"
+          }
+        },
+        "type": "group"
+      }
+    },
+    "type": "group"
+  },
+  "FOV Override": {
+    "settings": {
+      "First Person": {
+        "command": "ce_fovoverride_firstperson",
+        "tooltip": "Overrides FOV in thirdperson mode.",
+        "type": "int",
+        "value": 90
+      },
+      "Fixed": {
+        "command": "ce_fovoverride_fixed",
+        "tooltip": "Overrides FOV in fixed camerac mode.",
+        "type": "int",
+        "value": 90
+      },
+      "Roaming": {
+        "command": "ce_fovoverride_roaming",
+        "tooltip": "Overrides FOV in roaming camera mode.",
+        "type": "int",
+        "value": 90
+      },
+      "Third Person": {
+        "command": "ce_fovoverride_thirdperson",
+        "tooltip": "Overrides FOV in firstperson mode.",
+        "type": "int",
+        "value": 90
+      }
+    },
+    "type": "group"
+  },
+  "Global Killstreaks": {
+    "command": "ce_killstreaks_enabled",
+    "type": "bool",
+    "value": false
+  },
+  "Hit Events": {
+    "settings": {
+      "Crossbow Healing Only": {
+        "command": "ce_hitevents_healing_crossbow_only",
+        "tooltip": "Only show healing events originating from the Crusader's Crossbow.",
+        "type": "bool",
+        "value": false
+      },
+      "Enabled": {
+        "command": "ce_hitevents_enabled",
+        "tooltip": "Enables hitsounds and damage numbers in STVs.",
+        "type": "bool",
+        "value": false
+      },
+      "Required Line of Sight": {
+        "command": "ce_hitevents_dmgnumbers_los",
+        "tooltip": "Should we require LOS to the target before showing a damage number?\nFor a \"normal\" tf2 experience, enable this.",
+        "type": "bool",
+        "value": true
+      }
+    },
+    "type": "group"
+  },
+  "Local Player": {
+    "description": "When watching an STV or an STV demo, convinces the game that a\nspecified player is the local player.",
+    "settings": {
+      "Enabled": {
+        "command": "ce_localplayer_enabled",
+        "tooltip": "Enables the system.",
+        "type": "bool",
+        "value": true
+      },
+      "Player": {
+        "command": "ce_localplayer_player",
+        "ignoreIfBlank": true,
+        "tooltip": "If non-zero, specifies the player entindex to consider as the local player.",
+        "type": "int",
+        "value": 0
+      },
+      "Track Spec Target": {
+        "command": "ce_localplayer_track_spec_target",
+        "tooltip": "automatically updates to the current player being spectated.",
+        "type": "bool",
+        "value": true
+      }
+    },
+    "type": "group"
+  },
+  "Team Names": {
+    "settings": {
+      "Blu": {
+        "command": "ce_teamnames_blu",
+        "ignoreIfBlank": true,
+        "tooltip": "Overrides Blu team name.\nIgnored if left blank.",
+        "type": "string",
+        "value": ""
+      },
+      "Red": {
+        "command": "ce_teamnames_red",
+        "ignoreIfBlank": true,
+        "tooltip": "Overrides Red team name.\nIgnored if left blank.",
+        "type": "string",
+        "value": ""
+      }
+    },
+    "type": "group"
+  }
+}

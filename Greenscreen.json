@@ -1,0 +1,8 @@
+{
+  "Enable Greenscreen": {
+    "command": "fog_enable 1;\r\nfog_override 1;\r\nfog_color 0 255 0;\r\nfog_start 0;\r\nfog_end 1;\r\nfog_enableskybox 1;\r\nfog_colorskybox 0 255 0;\r\nfog_startskybox 0;\r\nfog_endskybox 1;\r\nr_drawparticles 0;\r\nr_drawdecals 0;\r\nfog_maxdensity 1;\r\nr_drawsprites 0;\r\nr_drawopaquerenderables 0;\r\nr_drawstaticprops 0;",
+    "tooltip": "Makes everything solid green except for the viewmodel and HUD.",
+    "type": "toggle",
+    "value": false
+  }
+}
